@@ -13,6 +13,6 @@ prime: src/main.o
 	$(CC) $(CFLAGS) -c -o $@ $^
 
 clean:
-	rm -f prime primes.txt notPrime.txt
+	rm -f prime primes.txt
 	find src/ -name '*.o' -delete
 
