@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <gmp.h>
 
-//Gobally declared for reusage
+//Globally declared for reusage
 mpz_t root; 
 mpz_t divisor;
 mpz_t mod;
@@ -38,7 +38,7 @@ int main()
     fprintf(fp, "%s\n", buffer);
     do{ 
       mpz_nextprime(prime, prime);
-    }while(isPrime(&prime) != 1);
+    }while(isPrime(&prime) == 0);
   }
 
   return 0;
